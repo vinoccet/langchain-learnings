@@ -32,10 +32,7 @@ template=ChatPromptTemplate.from_messages([
 ]
 )
 
-formated_prompt=template.format_messages(
-    tone="fun",
-topic="llm"
-)
+
 response=llm.invoke(formated_prompt).content
 
 print(response)
